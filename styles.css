@@ -44,6 +44,38 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Consistent heading styles across all pages */
+h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    margin-top: 1.25rem;
+}
+
+/* List styling for about page */
+.about-content ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.about-content li strong {
+    color: #2c3e50;
+}
+
 /* Form styling - responsive */
 form {
     margin: 20px auto;
