@@ -42,18 +42,24 @@
     <!-- Picture ends here -->
 
     <!--Contact me form -->
-            <form id="contactForm">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Your email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
-            </form>
-            <!--Contact me form ends-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Your email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Contact me form ends-->
 
             <!--Javascript to handle the form-->
             <script>
