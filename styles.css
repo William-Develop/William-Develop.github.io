@@ -156,12 +156,20 @@ form .btn-primary:hover {
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
 }
 
+/* Hide invalid feedback by default */
 .invalid-feedback {
+    display: none; /* Hidden by default instead of showing */
+}
+
+/* Only show when field is actively invalid AND has been touched */
+.form-control.is-invalid + .invalid-feedback {
     display: block;
-    width: 100%;
-    margin-top: 0.25rem;
-    font-size: 0.875em;
-    color: #dc3545;
+}
+
+/* Remove the aggressive red border on page load */
+.form-control:invalid {
+    border-color: #ced4da; /* Keep normal border until user interaction */
+    background-image: none;
 }
 
 .valid-feedback {
