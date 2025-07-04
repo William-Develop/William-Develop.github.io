@@ -158,17 +158,23 @@ form .btn-primary:hover {
 
 /* Hide invalid feedback by default */
 .invalid-feedback {
-    display: none; /* Hidden by default instead of showing */
+    display: none !important; /* Hidden by default instead of showing */
 }
 
 /* Only show when field is actively invalid AND has been touched */
 .form-control.is-invalid + .invalid-feedback {
-    display: block;
+    display: block !important;
 }
 
 /* Remove the aggressive red border on page load */
 .form-control:invalid {
     border-color: #ced4da; /* Keep normal border until user interaction */
+    background-image: none;
+}
+
+/* Ensure normal styling for untouched fields */
+.form-control:invalid:not(.is-invalid) {
+    border-color: #ced4da;
     background-image: none;
 }
 
